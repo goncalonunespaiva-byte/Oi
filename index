@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Horas">
+<meta name="theme-color" content="#0a0a0f">
+<title>Horas</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0a0a0f;
+  --surface: #12121a;
+  --card: #1a1a26;
+  --border: #2a2a40;
+  --accent: #c8f04a;
+  --accent2: #4af0c8;
+  --text: #f0f0f8;
+  --muted: #7070a0;
+  --danger: #f04a6a;
+  --safe-top: env(safe-area-inset-top);
+  --safe-bot: env(safe-area-inset-bottom);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Syne', sans-serif;
+  min-height: 100dvh;
+  overflow-x: hidden;
+}
+body::before {
+  content: '';
+  position: fixed; inset: 0;
+  background-image:
+    linear-gradient(rgba(200,240,74,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(200,240,74,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none; z-index: 0;
+}
+.app {
+  position: relative; z-index: 1;
+  max-width: 430px; margin: 0 auto;
+  padding: 0 16px calc(80px + var(--safe-bot));
+  padding-top: calc(var(--safe-top) + 12px);
+}
+
+/* ... trimmed ... */
+</script>
+</body>
+</html>
